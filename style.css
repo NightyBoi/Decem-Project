@@ -4,6 +4,16 @@
 	font-family: arial, sans-serif;
 }
 
+header{
+	position: fixed;
+    padding: 2em;
+    left: 50%;
+    top: -4.5%;
+    width: 100%;
+    transform: translateX(-50%);
+    z-index: 5;
+}
+
 body{
 	background-color: #f1f1f1;
 }
@@ -14,6 +24,10 @@ footer{
 }
 
 /* Beginning of Header */
+
+.fix{
+	height:60px;
+}
 
 #menu-container{
 	background-color: white;
@@ -358,7 +372,6 @@ i {
 		margin-left: 5px;
 	}
 
-
 	#quote-btn{
 		background-color: #46b688;
 		color: white;
@@ -463,6 +476,16 @@ i {
 @media only screen and (max-width: 610px) {
 
 	/* Beginning of Header */
+
+	header{
+		position: relative;
+		margin-top: -35px;
+	}
+
+	.fix{
+		height: 0;
+		background-color:red;
+	}
 
 	#logo{
 		width: 75%;
